@@ -18,6 +18,7 @@ class CustomAuthLayout extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
+        top: false,
         child: Container(
           decoration: (gradiantColor ?? false)
               ? const BoxDecoration(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_sprints_microsoft_shopcraft/core/localization/app_localizations.dart';
 import 'package:flutter_sprints_microsoft_shopcraft/features/auth/auth_screen.dart';
 
+import '../../features/home/presentation/home_screen.dart';
 import '../../features/settings/presentation/screens/settings_screen.dart';
 import 'routes.dart';
 
@@ -23,6 +24,9 @@ class AppRouter {
               const AuthScreen(),
           // ),
         );
+
+      case Routes.homeScreen:
+        return MaterialPageRoute(builder: (_) => const HomeScreen());
 
       case Routes.settingsScreen:
         return MaterialPageRoute(builder: (_) => const SettingsScreen());
